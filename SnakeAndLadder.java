@@ -17,7 +17,7 @@ public class SnakeAndLadder {
             int optionCheck = ran.nextInt(3);
             System.out.println("Option Check : " + optionCheck);
 
-            if (optionCheck == LADDER) {
+            if ((optionCheck == LADDER) && (position + dice) <=100) {
                 System.out.println("Ladder");
                 position = position + dice;
             } else if (optionCheck == SNAKE) {
